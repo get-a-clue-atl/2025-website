@@ -1,0 +1,280 @@
+body {
+    background: rgb(53, 51, 47);
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+}
+
+.main-content {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    width: 100%;
+    margin: 0 auto 1.5em;
+    font-size: 30px;
+}
+h1 small {
+    text-transform: none;
+    display: block;
+    margin: 20px 0;
+    font: 300 20px "QuickSand", sans-serif;
+    color: #999;
+}
+
+.moleskine-wrapper {
+    max-width: calc(100% / 4);
+    min-width: 10em;
+}
+
+.moleskine-notebook {
+    height: 250px;
+    width: 175px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px 15px 15px 5px;
+    transform-origin: left center 0px;
+    display: inline-block;
+    margin: 30px;
+    perspective: 800px;
+}
+.moleskine-notebook:hover {
+    transform: rotateZ(-10deg);
+}
+.moleskine-notebook:hover .notebook-cover {
+    transform: rotateY(-50deg);
+    z-index: 999;
+    box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.notebook-cover {
+    background: #d3b073;
+    height: 250px;
+    width: 175px;
+    position: absolute;
+    border-radius: 5px 15px 15px 5px;
+    z-index: 10;
+    transition: 0.5s linear;
+    transform-style: preserve-3d;
+    transform-origin: left center 0px;
+}
+.notebook-cover:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: calc(100% + 2px);
+    top: -1px;
+    z-index: 100;
+    border-radius: 2px;
+    left: 0px;
+    transition: 2s ease;
+    background: linear-gradient(
+      to right, 
+      #6b4952 0%,
+      #684951 12%,
+      #6b4952 25%,
+      #684951 37%,
+      #6b4952 50%,
+      #684951 62%,
+      #6b4952 75%,
+      #684951 87%,
+      #6b4952 100%
+    );
+}
+
+.notebook-cover.book1:before {
+  background: linear-gradient(
+      to right, 
+      #5a667d 0%,
+      #5a647c 12%,
+      #5a667d 25%,
+      #5a647c 37%,
+      #5a667d 50%,
+      #5a647c 62%,
+      #5a667d 75%,
+      #5a647c 87%,
+      #5a667d 100%
+    );
+}
+
+.notebook-cover.book2:before {
+  background: linear-gradient(
+      to right, 
+      #6b4952 0%,
+      #684951 12%,
+      #6b4952 25%,
+      #684951 37%,
+      #6b4952 50%,
+      #684951 62%,
+      #6b4952 75%,
+      #684951 87%,
+      #6b4952 100%
+    );
+}
+
+.notebook-cover.book3:before {
+  background: linear-gradient(
+      to right, 
+      #5b6c74 0%,
+      #55676f 12%,
+      #5b6c74 25%,
+      #55676f 37%,
+      #5b6c74 50%,
+      #55676f 62%,
+      #5b6c74 75%,
+      #55676f 87%,
+      #5b6c74 100%
+    );
+}
+
+.notebook-cover.book4:before {
+  background: linear-gradient(
+      to right, 
+      #796e95 0%, #7a6d94 12%,
+      #796e95 25%,
+      #7a6d94 37%,
+      #796e95 50%,
+      #7a6d94 62%,
+      #796e95 75%,
+      #7a6d94 87%,
+      #796e95 100%
+    );
+}
+.notebook-cover.book5:before {
+    background: linear-gradient(
+        to right, 
+        #505154 0%, #505155 12%, 
+        #505154 25%, #505155 37%, 
+        #505154 50%, #505155 62%, 
+        #505154 75%, #505155 87%, 
+        #505154 100%
+    );
+}
+
+.notebook-cover.book6:before {
+    background: linear-gradient(
+        to right, 
+        #d96e6e 0%, #d76c6a 12%, 
+        #d96e6e 25%, #d76c6a 37%, 
+        #d96e6e 50%, #d76c6a 62%, 
+        #d96e6e 75%, #d76c6a 87%, 
+        #d96e6e 100%
+    );
+}
+
+.notebook-cover.book7:before {
+    background: linear-gradient(
+        to right, 
+        #575c4f 0%, #585c4e 12%, 
+        #575c4f 25%, #585c4e 37%, 
+        #575c4f 50%, #585c4e 62%, 
+        #575c4f 75%, #585c4e 87%, 
+        #575c4f 100%
+    );
+}
+
+.notebook-cover.book8:before {
+    background: linear-gradient(
+        to right, 
+        #cf8667 0%, #cc8363 12%, 
+        #cf8667 25%, #cc8363 37%, 
+        #cf8667 50%, #cc8363 62%, 
+        #cf8667 75%, #cc8363 87%, 
+        #cf8667 100%
+    );
+}
+
+.notebook-cover.book9:before {
+    background: linear-gradient(
+        to right, 
+        #528ebd 0%, #4c8ab9 12%, 
+        #528ebd 25%, #4c8ab9 37%, 
+        #528ebd 50%, #4c8ab9 62%, 
+        #528ebd 75%, #4c8ab9 87%, 
+        #528ebd 100%
+    );
+}
+
+.notebook-cover.book10:before {
+    background: linear-gradient(
+        to right, 
+        #836b3d 0%, #826a3c 12%, 
+        #836b3d 25%, #826a3c 37%, 
+        #836b3d 50%, #826a3c 62%, 
+        #836b3d 75%, #826a3c 87%, 
+        #836b3d 100%
+    );
+}
+
+.notebook-cover.book11:before {
+    background: linear-gradient(
+        to right, 
+        #a5d2bb 0%, #a3d3bb 12%, 
+        #a5d2bb 25%, #a3d3bb 37%, 
+        #a5d2bb 50%, #a3d3bb 62%, 
+        #a5d2bb 75%, #a3d3bb 87%, 
+        #a5d2bb 100%
+    );
+}
+
+.notebook-cover.book12:before {
+    background: linear-gradient(
+        to right, 
+        #e65534 0%, #e25633 12%, 
+        #e65534 25%, #e25633 37%, 
+        #e65534 50%, #e25633 62%, 
+        #e65534 75%, #e25633 87%, 
+        #e65534 100%
+    );
+}
+
+.notebook-skin {
+    height: 15px;
+    background: d3b073;
+    margin-top: 200px;
+    padding: 15px;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    color: #7d1919;
+    text-align: right;
+    text-indent: 30px;
+    font-family: 'Special Elite';
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.notebook-skin:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    background: d3b073;
+}
+
+.notebook-page {
+    height: 100%;
+    width: 175px;
+    position: absolute;
+    background-color: #fbfae8;
+    z-index: 0;
+    border-radius: 5px 16px 16px 5px;
+    overflow: hidden;
+}
+.notebook-page.ruled {
+    background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);
+    background-size: 100% 10px;
+}
+.notebook-page.squared {
+    background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+    background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+}
+.notebook-page.dotted {
+    background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+    background-size: 11px 11px;
+}
