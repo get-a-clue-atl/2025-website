@@ -238,3 +238,7 @@ A hunt on April 1? What could go wrong? After a highly-charged and canoe-worthy 
 The clues were dispersed throughout three major clusters, spanning Roswell, Sandy Springs, and Downtown Atlanta. Teams had the opportunity to strategize how they tackled the clusters, navigating their way through trecherous sudokus, questionable slitherlinks, and a brand new clue format: Connections.
 
 **Memorable Clues**: The final clue was a gem. Teams had to solve a complex nonagram puzzle whose solution was the schematic for reassembling the key out of the mysterious shards of plastic they had been carrying in their team bags all day. Only a perfect key could unlock the vault at the final location.
+
+### 2025: A Series Of Unfortunate Events
+
+It is shaping up to be that kind of dreadful year... do you have what it takes to be the next GAC winner?
