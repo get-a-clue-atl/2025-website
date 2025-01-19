@@ -18,7 +18,7 @@
     </div>
     
 
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <p class="notebook-paper-body-text">various buildings, an audiotape clue using the sounds of the underground Hartsfield concourse-to-concourse trains and a locker (back then, you didn't need a ticket to go through security), a skit clue featuring electromagnets and a sword in the stone, invisible ink requiring you to heat the paper, and the infamous Spivey Hall clue. Spivey Hall was not listed in the phone book, nor was it shown on most maps at the time. It was located at Clayton State College (nowadays known as Clayton State University). "Spivey Hall? Isn't that where the Atlanta Symphony plays?" - anonymous teammate of Rich's, uttered at a BP station within one mile of the correct cluesite. </p>
     </div>
     
@@ -28,7 +28,7 @@
     </div>
     
     
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <h2 class="notebook-paper-title-text">1994</h2>
         <p class="notebook-paper-body-text"> 1994: Team Rambling Root Beer Barrel Polka  This game was marred somewhat by torrential rains. It featured clues onboard a double-decker bus at Great Gatsby's antiques, at the Concord Covered Bridge west of Smyrna, marching around Underground Atlanta to Coca-Cola sheet music and looking like idiots while several high school proms were taking place nearby, and another skit clue at the home of Brian Hampton's parents based on Costner's Robin Hood movie that was popular at the time, and upon which we had based a halftime show the previous fall. </p>
     </div>
@@ -39,7 +39,7 @@
     </div>
     
     
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <h2 class="notebook-paper-title-text">1995</h2>
         <p class="notebook-paper-body-text"> 1995: N'Digo (Nassif!)  This was a pretty good game in which most of the teams finished at a reasonable hour. One major innovation of this game was the creation of Halftime, a place where teams could rest, eat snacks, and use the bathrooms off the clock. This innovation has disappeared in recent years, but it seemed like a pretty good idea at the time. </p>
     </div>
@@ -51,42 +51,6 @@
     
             </div>
         </body>
-        <script>
-        function addNotebookPage() {
-            // Get the main container for the notebook pages
-            const notes = document.getElementsByClassName('note-container');
-
-            for (let noteContainer of notes) {
-                // Get dimensions
-                const containerHeight = noteContainer.offsetHeight;
-                const containerWidth = noteContainer.offsetWidth;
-
-                // Create a new notebook page
-                const newPage = document.createElement('div');
-                newPage.classList.add('notebook-paper');
-                newPage.classList.add('notebook-paper-a')
-                newPage.classList.add('notebook-paper.background');
-
-                // Optional: Add some content to the new page
-                newPage.innerHTML = '<p></p>';
-
-                // Set random positioning for the new page
-                const randomX = Math.floor((Math.random() -0.5) * (containerWidth + 1));
-                const randomY = Math.floor(Math.random() * (containerHeight / 2  + 1));
-                const randomRotation = Math.random() * 360; // Random rotation (-10 to 10 degrees)
-
-                newPage.style.position = 'absolute';
-                newPage.style.transform = `translate(${randomX}%, ${-randomY}%) rotate(${randomRotation}deg)`;
-                newPage.style.zIndex = 0; // Random z-index to place behind/above others
-
-                noteContainer.appendChild(newPage)
-            }
-        }
-
-        // Call the function to add a few pages dynamically
-        for (let i = 0; i < 100; i++) {
-            addNotebookPage();
-        }
-        </script>
+        <script src="../scripts/addNotebookPage.js"></script>
     </html>
     

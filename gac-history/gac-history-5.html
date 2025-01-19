@@ -12,13 +12,13 @@
         <body>
             <div class="note-container note-container-first">
                     
-    <div class="notebook-paper notebook-paper-a">
+    <div class="notebook-paper notebook-paper-b">
         <h2 class="notebook-paper-title-text">2005</h2>
         <p class="notebook-paper-body-text"> 2005: GIT A Clue 2005  The 2005 game had a strong money and business theme. This can mostly be attributed to (or blamed on) the presence of four MBA students on the previous year's winning team. Being the 16th year (a nice round binary number) since the original Get A Clue Road Adventure, this game paid some small tributes to Get A Clue games of yore, without copying past puzzles. Soundtrack discs bore the titles "Compensation and Benefits Package", "Mileage Reimbursement", "Expense Account", "Executive Washroom", and "Company Historian". </p>
     </div>
     
 
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: "In order to ensure fairness to our bidders, the nature of the ferst clue will not be revealed until the opening of the bid packages on April 9th." In other words, to quote Fireball in the 2001 manual, "Wouldn't you like to know?" This led to a multiple-choice test on Tech History within the manual itself. After answering all the questions correctly (thank God for wireless internet), teams were led to the smokestack in Atlantic Station where the first sealed clues were handed out.  </p>
     </div>
     
@@ -40,53 +40,17 @@
     </div>
     
 
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: The website had a binary clue, ciphered with 000 = 0, 007 = 1, telling players to start at the Couch building. Initial gameday clue led teams on a photo scavenger hunt around campus... for those that bothered to look in the back of the OHDAM. </p>
     </div>
     
 
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <p class="notebook-paper-body-text"><strong>Memorable Clues</strong>: The microcontroller that was hidden in a stuffed dog that flashed two (or was it three?) messages in morse code, as well as finding the rapidly decomposed body of 00p after having left him in the trunk just that morning.  </p>
     </div>
     
             </div>
         </body>
-        <script>
-        function addNotebookPage() {
-            // Get the main container for the notebook pages
-            const notes = document.getElementsByClassName('note-container');
-
-            for (let noteContainer of notes) {
-                // Get dimensions
-                const containerHeight = noteContainer.offsetHeight;
-                const containerWidth = noteContainer.offsetWidth;
-
-                // Create a new notebook page
-                const newPage = document.createElement('div');
-                newPage.classList.add('notebook-paper');
-                newPage.classList.add('notebook-paper-a')
-                newPage.classList.add('notebook-paper.background');
-
-                // Optional: Add some content to the new page
-                newPage.innerHTML = '<p></p>';
-
-                // Set random positioning for the new page
-                const randomX = Math.floor((Math.random() -0.5) * (containerWidth + 1));
-                const randomY = Math.floor(Math.random() * (containerHeight / 2  + 1));
-                const randomRotation = Math.random() * 360; // Random rotation (-10 to 10 degrees)
-
-                newPage.style.position = 'absolute';
-                newPage.style.transform = `translate(${randomX}%, ${-randomY}%) rotate(${randomRotation}deg)`;
-                newPage.style.zIndex = 0; // Random z-index to place behind/above others
-
-                noteContainer.appendChild(newPage)
-            }
-        }
-
-        // Call the function to add a few pages dynamically
-        for (let i = 0; i < 100; i++) {
-            addNotebookPage();
-        }
-        </script>
+        <script src="../scripts/addNotebookPage.js"></script>
     </html>
     

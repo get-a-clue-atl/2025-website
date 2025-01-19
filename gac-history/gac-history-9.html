@@ -12,7 +12,7 @@
         <body>
             <div class="note-container note-container-first">
                     
-    <div class="notebook-paper notebook-paper-a">
+    <div class="notebook-paper notebook-paper-b">
         <h2 class="notebook-paper-title-text">2017</h2>
         <p class="notebook-paper-body-text"> 2017: Dungeons and GACons  The 2016 game was won by outsider team Teensy But Vicious, who promptly disappeared from the face of the earth. Despite a few false flags from a Band Header spammer, nobody had seen or heard anything about a 2017 game well into the new year. As March approached, puzzle lovers began to resign themselves to the idea that there might not be a game that year. At the last minute (literally, a month before game time) a group of masochists/GAC veterans decided to throw sanity to the wind and take on the mantle of Game Control. Planned in under a month, the 2017 featured a Dungeons and Dragons theme and literal minutes of clue testing, followed by a premature end</p>
     </div>
@@ -28,65 +28,29 @@
     </div>
     
     
-    <div class="notebook-paper notebook-paper-a">
+    <div class="notebook-paper notebook-paper-b">
         <h2 class="notebook-paper-title-text">2018</h2>
         <p class="notebook-paper-body-text"> 2018: Clue  A classic game of Clue left each team with a different answer of who did it, where, and with what weapon. Allusions to Communism served as red herrings to throw teams off the scent. The same masochists that put together the last-minute game in 2017 took it upon themselves to host again, this time with more time to plan and execute. </p>
     </div>
     
 
-    <div class="notebook-paper notebook-paper-a">
+    <div class="notebook-paper notebook-paper-b">
         <p class="notebook-paper-body-text"><strong>Memorable Clues</strong>: a 3D-printed puzzlebox, a clue where we had to wrap the sheet of paper around itself, and a brothel puzzle of cubes  </p>
     </div>
     
     
-    <div class="notebook-paper notebook-paper-a">
+    <div class="notebook-paper notebook-paper-b">
         <h2 class="notebook-paper-title-text">2019</h2>
         <p class="notebook-paper-body-text"> 2019: Harry Potter and the Multiwizard’s GACup  After throwing their names into the Goblet of Fire (i.e., ping pong balls into a giant wine glass), teams raced across metro Atlanta to find Lord Voldemort. Jk, not really, Voldemort was summering in the Hamptons. While on their hunt, teams took a break to enjoy Bertie Bott’s Every Flavor Beans, to exchange bronze keys, and to spend quality time with their pet frog, cat, or owl. Teams also learned plenty of Fun Facts! Fun fact! J.K. Rowling has confirmed that Dobby assassinated Princess Diana. </p>
     </div>
     
 
-    <div class="notebook-paper notebook-paper-b">
+    <div class="notebook-paper notebook-paper-a">
         <p class="notebook-paper-body-text"><strong>Memorable Clues</strong>: the Marauder’s Map Puzzle, Defense Against the Dark Horse, the Yule Ball, and the almost impossible Quidditch Quandary 2020-2021:  Postponed due to COVID-19.  </p>
     </div>
     
             </div>
         </body>
-        <script>
-        function addNotebookPage() {
-            // Get the main container for the notebook pages
-            const notes = document.getElementsByClassName('note-container');
-
-            for (let noteContainer of notes) {
-                // Get dimensions
-                const containerHeight = noteContainer.offsetHeight;
-                const containerWidth = noteContainer.offsetWidth;
-
-                // Create a new notebook page
-                const newPage = document.createElement('div');
-                newPage.classList.add('notebook-paper');
-                newPage.classList.add('notebook-paper-a')
-                newPage.classList.add('notebook-paper.background');
-
-                // Optional: Add some content to the new page
-                newPage.innerHTML = '<p></p>';
-
-                // Set random positioning for the new page
-                const randomX = Math.floor((Math.random() -0.5) * (containerWidth + 1));
-                const randomY = Math.floor(Math.random() * (containerHeight / 2  + 1));
-                const randomRotation = Math.random() * 360; // Random rotation (-10 to 10 degrees)
-
-                newPage.style.position = 'absolute';
-                newPage.style.transform = `translate(${randomX}%, ${-randomY}%) rotate(${randomRotation}deg)`;
-                newPage.style.zIndex = 0; // Random z-index to place behind/above others
-
-                noteContainer.appendChild(newPage)
-            }
-        }
-
-        // Call the function to add a few pages dynamically
-        for (let i = 0; i < 100; i++) {
-            addNotebookPage();
-        }
-        </script>
+        <script src="../scripts/addNotebookPage.js"></script>
     </html>
     
