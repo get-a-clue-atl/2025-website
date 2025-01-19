@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>GAC History</title>
+            <link rel="stylesheet" href="../gac-history-notecards.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="note-container note-container-first">
+                    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">1999</h2>
+        <p class="notebook-paper-body-text"> 1999: GYAC 99 </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-b">
+        <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: Team captains were put in desks in the front of the rehearsal hall, where they were to take a test given on overheads. Throughout the test, certain words were capitalized, spelling out "Pounce The Panther Says Go To The Pool At The School". The first clue was in the diving well at Georgia State.  </p>
+    </div>
+    
+    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">2000</h2>
+        <p class="notebook-paper-body-text"> 2000: A Briefcase Full of Clues  The 2000 game included the advent of the OHDaMN, a general reference manual for Get A Clue. Cryptography was a huge part of this game, and if not for the manual, most teams could not have finished. This was also arguably the first game in which a strong theme was established. A mix CD was distributed to all teams with part of a clue embedded inside it. A fair number of cluesites were used in earlier games, apparently unbeknownst to Game Control, but the puzzles to get to those sites were very good and innovative. The bead clue was truly amazing but required large numbers of people (or a laptop) in order to finish quickly. Also, this game included the</p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-b">
+        <p class="notebook-paper-body-text">last known example of Halftime, in which Death from Bill and Ted's Bogus Journey played games (to lose, and it showed) such as Tic-Tac-Toe and Hungry Hungry Hippos. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: Game Control fired water balloons at the team captains using a giant rubber band from a distance of roughly 60 yards. The balloons each contained a small token with the team number on it. Note: balloons lobbed from such a distance HURT.  </p>
+    </div>
+    
+    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">2001</h2>
+        <p class="notebook-paper-body-text"> 2001: You Don't Know GAC  The 2001 game included a few more innovations, including a SETI T-shirt that was critical to the solution of a clue, mixing various soundbytes together to create CD tracks, recording their own parody of the Sunscreen commencement speech, and more. Also, this may have been the first year for the call-in help clue. If a cluesite was vandalized, clues could be replaced by driving to the nearest Kinko's for a fax. Clues were thoroughly tested on a variety of terrestrial species before being unleashed upon the world. This was probably the first game that stood absolutely no chance of making money, but Game Control probably considered it to be an alumni and friends</p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text">donation anyway. Clues included the aforementioned SETI, a banner mounted on the side of a building that was only visible from the North MARTA line, washing a fire truck, and placement weaving. The soundtrack included Low Rider, Flamethrower (the line dance song by the J. Geils Band), and The Horse. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: The game began with a physical challenge. Four members of each team hopped on one long pair of skis steered by ropes, which the teammates held onto. Teams raced across the grounds in front of what was then the Management cluster. The order of finish determined the team's routes.  </p>
+    </div>
+    
+            </div>
+        </body>
+        <script>
+        function addNotebookPage() {
+            // Get the main container for the notebook pages
+            const notes = document.getElementsByClassName('note-container');
+
+            for (let noteContainer of notes) {
+                // Get dimensions
+                const containerHeight = noteContainer.offsetHeight;
+                const containerWidth = noteContainer.offsetWidth;
+
+                // Create a new notebook page
+                const newPage = document.createElement('div');
+                newPage.classList.add('notebook-paper');
+                newPage.classList.add('notebook-paper-a')
+                newPage.classList.add('notebook-paper.background');
+
+                // Optional: Add some content to the new page
+                newPage.innerHTML = '<p></p>';
+
+                // Set random positioning for the new page
+                const randomX = Math.floor((Math.random() -0.5) * (containerWidth + 1));
+                const randomY = Math.floor(Math.random() * (containerHeight / 2  + 1));
+                const randomRotation = Math.random() * 360; // Random rotation (-10 to 10 degrees)
+
+                newPage.style.position = 'absolute';
+                newPage.style.transform = `translate(${randomX}%, ${-randomY}%) rotate(${randomRotation}deg)`;
+                newPage.style.zIndex = 0; // Random z-index to place behind/above others
+
+                noteContainer.appendChild(newPage)
+            }
+        }
+
+        // Call the function to add a few pages dynamically
+        for (let i = 0; i < 100; i++) {
+            addNotebookPage();
+        }
+        </script>
+    </html>
+    

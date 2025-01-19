@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>GAC History</title>
+            <link rel="stylesheet" href="../gac-history-notecards.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="note-container note-container-first">
+                    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">2014</h2>
+        <p class="notebook-paper-body-text"> 2014: A Most Excellent Adventure  We can't write up anything better than these folks: Tech marching band's offbeat amazing race </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Memorable Clues</strong>: Dude, Excellent: Two team members called in and got synchronized (but different) phone calls, one instructed to say "Dude" and the other, "Excellent", when their phone calls had the words in them. These out-loud exclamations corresomded to dots (dude) and dashes (excellent) and needed the other teams to listen and write down/decode the morse code. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Memorable Item</strong>: The Companion Cube, a cinder block that teams had to carry around with them all day and take selfies with.  </p>
+    </div>
+    
+    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">2015</h2>
+        <p class="notebook-paper-body-text"> 2015: Free Country USA Triannual Race to the End of the Race  After racing to the end of the race to start the day, teams ran, raced, jogged, raced, ran, and raced their way to the real end of the race after completing a series of running-related tasks supplied by Homestar and friends. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Memorable Clues</strong>: Well, we're definitely never going to be able to listen to YYZ the same way ever again. (From another room, Krieger yells "FOR THE LAST TIME, IT'S PRONOUNCED Y Y ZED!!!!")  </p>
+    </div>
+    
+    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">2016</h2>
+        <p class="notebook-paper-body-text"> 2016: Archer  Lana... Lana... LAAAANAAAAA!!!!!! .... Danger Zone. Folks at the International Secret Intelligence Service (also known as, sigh, ISIS) are looking to train and recruit new field operatives to fill some recent vacancies in the organization. But since cash is a little tight--it turns out all those HR lawsuits really add up--they've had to think outside their normal onboarding procedures. 2016 saw the introduction of the ClueKeeper app, a well supported app designed specifically for scavenger hunts. As a bonus, the app allowed for a more elegant implementation of a planned stop time; depending on the team's progress, clues could be seamlessly removed from the lineup, ensuring</p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-b">
+        <p class="notebook-paper-body-text">that everyone could make it to bar at the end of the game. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Memorable Clues</strong>: Who can forget trekking through Oakland Cemetery in the Georgia heat, hunting matching pictures to tombstones while that morning's mimosas started to wear off? Or was that just us?  </p>
+    </div>
+    
+            </div>
+        </body>
+        <script>
+        function addNotebookPage() {
+            // Get the main container for the notebook pages
+            const notes = document.getElementsByClassName('note-container');
+
+            for (let noteContainer of notes) {
+                // Get dimensions
+                const containerHeight = noteContainer.offsetHeight;
+                const containerWidth = noteContainer.offsetWidth;
+
+                // Create a new notebook page
+                const newPage = document.createElement('div');
+                newPage.classList.add('notebook-paper');
+                newPage.classList.add('notebook-paper-a')
+                newPage.classList.add('notebook-paper.background');
+
+                // Optional: Add some content to the new page
+                newPage.innerHTML = '<p></p>';
+
+                // Set random positioning for the new page
+                const randomX = Math.floor((Math.random() -0.5) * (containerWidth + 1));
+                const randomY = Math.floor(Math.random() * (containerHeight / 2  + 1));
+                const randomRotation = Math.random() * 360; // Random rotation (-10 to 10 degrees)
+
+                newPage.style.position = 'absolute';
+                newPage.style.transform = `translate(${randomX}%, ${-randomY}%) rotate(${randomRotation}deg)`;
+                newPage.style.zIndex = 0; // Random z-index to place behind/above others
+
+                noteContainer.appendChild(newPage)
+            }
+        }
+
+        // Call the function to add a few pages dynamically
+        for (let i = 0; i < 100; i++) {
+            addNotebookPage();
+        }
+        </script>
+    </html>
+    

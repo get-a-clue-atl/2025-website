@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>GAC History</title>
+            <link rel="stylesheet" href="../gac-history-notecards.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="note-container note-container-first">
+                    
+    <div class="notebook-paper notebook-paper-b">
+        <h2 class="notebook-paper-title-text">1996</h2>
+        <p class="notebook-paper-body-text"> 1996: The Olympics Can Be A Major Payne  Another game with some influence from Ben Cowan, reviver of the game. Clues included tracing various Delta Air Lines routes over a map of the USA to spell out "Rex" (a small village on the southeast side of town), two clues located at Best Buy retailers around town (including a photo of the chess piece towers near Perimeter Mall), the musical American Airlines Baggage clue, and looking up "Yac, G" in the residential pages of the phone book. A skit clue at a southern Gwinnett park included a drill sergeant that would not allow teams to leave until they had performed drills to his satisfaction. Advance preparation by Game Control pays dividends, as</p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text">does bringing a copy of the Declaration of Independence, as specifically stated in the list of items to bring that year. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-a">
+        <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: Teams went "camping" in the Couch rehearsal hall, and each team had to name an item they would bring to the campsite. Teams that named an item starting with the same letter as their team name were released and given their clue. Teams failing to pick up on the pattern, were delayed and given their clue a little later.  </p>
+    </div>
+    
+    
+    <div class="notebook-paper notebook-paper-a">
+        <h2 class="notebook-paper-title-text">1997</h2>
+        <p class="notebook-paper-body-text"> 1997: Keep On Getting a Clue (KOGAC)  This was the first year that teams received a random-numbered route, instead of being assigned a route with their color. While this may seem trivial now, it marked a big leap in the running of the game, as nobody could now complain that they were shafted by being given a longer route than others. Unfortunately, most routes turned out to be very long indeed, as routes were presumably balanced within five percent of each other by sending teams back and forth over the top end of I-285 repeatedly - while it was being resurfaced two lanes at a time. Many cluesites consisted of large signs worthy of inclusion at roadsideamerica.com, including Uncle Bud's</p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-b">
+        <p class="notebook-paper-body-text">Catfish in Smyrna (since torn down and relocated), R&R Contractors in Norcross (interesting silhouette), Northwest Exterminators in Smyrna (die, Mothra, die!), and the Bo Phillips Construction Company in Tucker. The puzzles themselves were pretty good, but 400-plus miles of driving was just too much for some teams. </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-b">
+        <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: Each team participated in a relay race, with a can of Coke as the baton. The last person on the team had to drink the (well shook up) Coke, then bob for their clue in a wading pool.  </p>
+    </div>
+    
+    
+    <div class="notebook-paper notebook-paper-b">
+        <h2 class="notebook-paper-title-text">1998</h2>
+        <p class="notebook-paper-body-text"> 1998: GYAC 98: Team 8-Ball </p>
+    </div>
+    
+
+    <div class="notebook-paper notebook-paper-b">
+        <p class="notebook-paper-body-text"><strong>Opening Clue</strong>: "Whooooooooo's Thirsty?" Nowhere in the directions did it say the game started at Couch, yet all but three teams showed up there. And those that did show up at Couch were in for quite a treat: Zeb's AMAZING Magic Show! Mark "Zeb" Szlemko performed tricks of much delight and amazement...while those other three teams that went to O'Keefe (as the rules clearly stated) got a good 30 minute start on the game. And after the magic show was over, they closed the doors to Couch, revealing a sign that said, "Hope you enjoyed the show! Now, go read your Rules!" At O'Keefe, there was a memory test (a la Concentration) that you needed to pass to get your first clue.  </p>
+    </div>
+    
+            </div>
+        </body>
+        <script>
+        function addNotebookPage() {
+            // Get the main container for the notebook pages
+            const notes = document.getElementsByClassName('note-container');
+
+            for (let noteContainer of notes) {
+                // Get dimensions
+                const containerHeight = noteContainer.offsetHeight;
+                const containerWidth = noteContainer.offsetWidth;
+
+                // Create a new notebook page
+                const newPage = document.createElement('div');
+                newPage.classList.add('notebook-paper');
+                newPage.classList.add('notebook-paper-a')
+                newPage.classList.add('notebook-paper.background');
+
+                // Optional: Add some content to the new page
+                newPage.innerHTML = '<p></p>';
+
+                // Set random positioning for the new page
+                const randomX = Math.floor((Math.random() -0.5) * (containerWidth + 1));
+                const randomY = Math.floor(Math.random() * (containerHeight / 2  + 1));
+                const randomRotation = Math.random() * 360; // Random rotation (-10 to 10 degrees)
+
+                newPage.style.position = 'absolute';
+                newPage.style.transform = `translate(${randomX}%, ${-randomY}%) rotate(${randomRotation}deg)`;
+                newPage.style.zIndex = 0; // Random z-index to place behind/above others
+
+                noteContainer.appendChild(newPage)
+            }
+        }
+
+        // Call the function to add a few pages dynamically
+        for (let i = 0; i < 100; i++) {
+            addNotebookPage();
+        }
+        </script>
+    </html>
+    
