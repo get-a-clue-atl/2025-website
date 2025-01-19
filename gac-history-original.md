@@ -233,9 +233,11 @@ A hunt on April 1? What could go wrong? After a highly-charged and canoe-worthy 
 
 ### 2024: Flavor Blast Me Captain
 
+The clues were dispersed throughout three major clusters, spanning Roswell, Sandy Springs, and Downtown Atlanta. Teams had the opportunity to strategize how they tackled the clusters, navigating their way through trecherous sudokus, questionable slitherlinks, and a brand new clue format: Connections. Ultimately the best organized team, the Atlanta Thrashers, took the win in an unprecedented, a word which here means "never
+before seen in the history of the game" display of skill, sharp wit, and clever puzzle solving.
+
 **Opening Clue**: A feast of ingredients were set out in a display that would make Iron Chef proud. Teams had to collect sets of ingredients matching a prompt. The judges didn't know what fruits were, and in the chaos that ensued, GAC began.
 
-The clues were dispersed throughout three major clusters, spanning Roswell, Sandy Springs, and Downtown Atlanta. Teams had the opportunity to strategize how they tackled the clusters, navigating their way through trecherous sudokus, questionable slitherlinks, and a brand new clue format: Connections.
 
 **Memorable Clues**: The final clue was a gem. Teams had to solve a complex nonagram puzzle whose solution was the schematic for reassembling the key out of the mysterious shards of plastic they had been carrying in their team bags all day. Only a perfect key could unlock the vault at the final location.
 
