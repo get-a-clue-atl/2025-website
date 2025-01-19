@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #e2e2e2;
+    z-index: -1;
+}
+
+.notebook-paper {
+    width: 400px;
+    height: 500px;
+    background: #d5c093;
+    border: 1px solid #b6bfae;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 20px;
+    line-height: 1.6;
+    background: linear-gradient(#d5c093, #d5c093 28px, #b6bfae 28px, #b6bfae 30px);
+    background-size: 100% 30px; /* Simulates notebook lines */
+    transform: rotate(-5deg); /* Slants the paper by -15 degrees */
+    z-index: 1;
+}
+
+.notebook-paper-a {
+    transform: rotate(-5deg); /* Slants the paper by -15 degrees */
+}
+
+.notebook-paper-b {
+    transform: rotate(5deg); /* Slants the paper by -15 degrees */
+}
+
+.notebook-paper::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        #ddd 10px,
+        #ddd 20px
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.notebook-paper::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    background: repeating-linear-gradient(
+        #d5c093,
+        #d5c093 8px,
+        #bbb 8px,
+        #bbb 10px
+    ); /* Creates notebook holes on the left */
+}
+
+.notebook-paper-body-text {
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.notebook-paper-title-text {
+    font-family: "Special Elite", serif;
+    font-weight: 1200;
+    font-style: bold;
+}
+
+/* Optional styling for content */
+.notebook-paper p {
+    margin: 0;
+    padding-left: 40px; /* Space to account for the torn margin */
+}
+
+.note-container-first {
+    margin-top: 0px;
+}
+
+.note-container-top-pad {
+    margin-top: 1200px;
+}
+
+.note-container-left {
+    justify-content: left;
+    align-items: left;
+}
+
+.note-container-right{
+    justify-content: right;
+    align-items: right;
+    right: 500px;
+}
