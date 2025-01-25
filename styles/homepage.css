@@ -123,6 +123,20 @@ body {
     text-align: right;
 }
 
+.raven-script {
+    font-family: 'Homemade Apple', serif !important;
+    font-size: 2vw; /* Scales with the viewport */
+    color: #111;
+    text-align: center;
+}
+
+.typewriter-script {
+    font-family: 'Special Elite';
+    font-size: 2vw;
+    color: #111;
+    text-align: right;
+}
+
 /* Call-to-Action Button */
 .cta-button {
     display: inline-block;
