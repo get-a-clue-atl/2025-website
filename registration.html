@@ -3,14 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAC 2025 Registration</title>
+  <title>GAC 2025 Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="coming-soon.css">
+  <link rel="stylesheet" href="styles/site-navigation.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/registration.css"
 </head>
-<body>
-    <h1>Registration: Coming Soon</h1>
+<body class="contact-page">
+  <div class="container">
+    <header>
+        <div id="header">
+            <nav class="site-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="items.html">Items</a></li>
+                    <li>
+                    <a href="#">Explore</a>
+                    <ul class="dropdown">
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="gac-history.html">History</a></li>
+                        <li><a href="secrets.html">Secrets</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <section class="registration-section">
+        <form class="registration-form" action="https://formspree.io/f/xdkaaooo" method="post">
+          <h1>Team Registration</h1>
+          <p>Registration opens February 1st and closes March 15th.<br>Registration fee: $50 per team.</p>
+          
+          <div class="form-group">
+              <label for="team-name">Team Name</label>
+              <input type="text" id="team-name" name="team-name" placeholder="Enter your team's name" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="team-captain">Team Captain</label>
+              <input type="text" id="team-captain" name="team-captain" placeholder="Enter team captain's name" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="contact-info">Contact Info</label>
+              <input type="email" id="contact-info" name="contact-info" placeholder="Enter an email address" required>
+          </div>
+          
+          <div class="form-group">
+              <input type="checkbox" id="agree" name="agree" required>
+              <label for="agree" class="checkbox-label">I agree to pay the $50 registration fee.</label>
+          </div>
+          
+          <button type="submit" class="cta-button">Submit Registration</button>
+          
+          <div class="form-footer">
+              We will reach out via email to confirm your registration and collect payment.
+          </div>
+      </form>
+      <img src="assets/fishy-waiter-fixed-bg.png" class="bottom-left-image" alt="Bottom Left Image">
+      <img src="assets/freak-woman-fixed-bg.png" class="bottom-right-image" alt="Bottom Right Image">
+  </section>
+  </main>
+</div>
+<footer>
+    <div>Made with <span style="color: #e25555;">&#9829;</span> by Get A Clue Atlanta 2025.</div>
+    <div>Illustrations Courtesty of Brett Helquist.</div>
+</footer>
 </body>
+<script src="scripts/addMenuDropdown.js"></script>
 
 </html>
