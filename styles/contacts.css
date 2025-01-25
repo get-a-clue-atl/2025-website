@@ -66,16 +66,8 @@
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .icon-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid for smaller screens */
-    }
-
     .icon-box {
         padding: 10px;
-    }
-
-    .icon-box img {
-        width: 40px; /* Smaller icons on mobile */
-        height: 40px;
+        align-items: center;
     }
 }
