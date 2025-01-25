@@ -1,0 +1,32 @@
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: ##f8f9fa;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(148, 38, 38);
+    color: white;
+    border-radius: 50%;
+    font-size: 3rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.event-date {
+    font-size: 1.2rem;
+    color: #666;
+}
