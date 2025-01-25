@@ -1,0 +1,81 @@
+/* Contact Links Section */
+.contact-links {
+    text-align: center;
+    padding: 20px;
+    color: #eaeaea;
+    font-family: 'Special Elite', monospace;
+}
+
+.contact-links h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+/* Icon Grid */
+.icon-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Spacing between icons */
+    justify-items: center; /* Center icons horizontally */
+    padding: 10px;
+}
+
+/* Icon Box */
+.icon-box {
+    display: flex;
+    flex-direction: column; /* Stack icon and label vertically */
+    align-items: center;
+    background: #f8f9fa; /* Box background */
+    border: 1px solid #444; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    color: #eaeaea;
+    width: 100%; /* Ensures uniformity within grid */
+    max-width: 50px; /* Prevents boxes from getting too wide */
+    aspect-ratio: 1 / 1;
+}
+
+/* Icon Styling */
+.icon-box img {
+    width: 50px; /* Icon size */
+    height: auto;
+    margin-bottom: 10px;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+
+.icon-box span {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Hover Effects */
+.icon-box:hover {
+    transform: scale(1.05); /* Slight pop effect */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Glow effect */
+}
+
+.icon-box img:hover {
+    filter: grayscale(0%); /* Brightens icon */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .icon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid for smaller screens */
+    }
+
+    .icon-box {
+        padding: 10px;
+    }
+
+    .icon-box img {
+        width: 40px; /* Smaller icons on mobile */
+        height: 40px;
+    }
+}
