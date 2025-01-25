@@ -5,6 +5,7 @@ body {
     min-height: 100vh; /* Ensure the body is at least the full height of the viewport */
     margin: 0; /* Remove default margin */
     position: relative;
+    background-color: #f8f9fa;
   }
   
   .container {
@@ -41,3 +42,17 @@ body {
     bottom: 60px;
     z-index: 2;
   }
+
+.raven-script {
+    font-family: 'Homemade Apple', serif !important;
+    font-size: 2vw; /* Scales with the viewport */
+    color: #111;
+    text-align: center;
+}
+
+.typewriter-script {
+    font-family: 'Special Elite';
+    font-size: 2vw;
+    color: #111;
+    text-align: right;
+}
