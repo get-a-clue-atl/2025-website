@@ -23,7 +23,6 @@ function createRandomNotebookPaper(content, link) {
   
     // Add hover effects
     paper.addEventListener('mouseover', () => {
-          console.log(`Hovered element z-index: ${window.getComputedStyle(paper).zIndex}`);
           paper.style.zIndex = 99;
       });
       paper.addEventListener('mouseout', () => {
