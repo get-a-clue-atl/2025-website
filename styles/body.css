@@ -1,0 +1,43 @@
+/* Body and Container for Sticky Footer */
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure the body is at least the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    position: relative;
+  }
+  
+  .container {
+    flex: 1; /* Push the footer to the bottom by taking up remaining space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-family: 'Special Elite', monospace;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    padding: 10px;
+    background-color: #f8f9fa;
+    z-index: 1;
+  }
+  
+  .bottom-left-image {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 10px;
+    bottom: 60px;
+    z-index: 2;
+  }
+  
+  .bottom-right-image {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: 10px;
+    bottom: 60px;
+    z-index: 2;
+  }

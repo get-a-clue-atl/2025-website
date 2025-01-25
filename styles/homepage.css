@@ -1,0 +1,212 @@
+/* General Body Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f9fa;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Title and Subtitle */
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #eaeaea;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+.subtitle {
+    font-family: 'Special Elite', monospace;
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+/* Navigation */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.main-nav li {
+    margin: 0 10px;
+}
+
+.main-nav a {
+    font-family: 'Special Elite', monospace;
+    text-decoration: none;
+    color: #d4af37;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ffffff;
+}
+
+/* Intro Section Styled as a Crumbled Letter */
+.intro {
+    text-align: left;
+    padding: 5% 5%; /* Adjust padding using percentage */
+    background: url("../assets/vintage-paper.jpg") center/cover no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2%; /* Border radius in percentage */
+    box-shadow: 
+      5% 5% 7% rgba(0, 0, 0, 0.5),
+      inset 0 0 5% rgba(0, 0, 0, 0.3); /* Shadows use percentages */
+    color: #222;
+    font-family: 'Special Elite', monospace;
+    line-height: 1.6;
+    margin: 5% auto; /* Margin in percentages */
+    max-width: 50%; /* Allow full-width on smaller screens */
+    min-width: 300px;
+    transform: rotate(-2deg);
+    position: relative;
+    z-index: 3;
+}
+
+/* Torn Edges Effect */
+.intro::before,
+.intro::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../assets/vintage-paper.jpg") center/cover no-repeat;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Headings */
+.intro h2, .intro h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5vw; /* Use viewport width for scalability */
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 0 2% 0; /* Bottom margin in percentage */
+}
+
+.intro h3 {
+    text-align: right;
+    font-size: 2vw; /* Slightly smaller font-size for h3 */
+}
+
+/* Paragraphs */
+.intro p {
+    font-size: 1.2vw; /* Scale text size based on viewport width */
+    color: #333;
+    margin-bottom: 2%; /* Bottom margin in percentage */
+    text-indent: 5%; /* Indent in percentage for flexibility */
+    line-height: 1.8;
+}
+
+/* Signature */
+.snicket-signature {
+    font-family: 'Homemade Apple', serif;
+    font-size: 2vw; /* Scales with the viewport */
+    color: #111;
+    font-style: italic;
+    text-align: right;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 5%; /* Margin in percentage for spacing */
+    padding: 1.5% 3%; /* Padding in percentages */
+    font-size: 1.5vw; /* Scale font size for responsiveness */
+    font-family: 'Special Elite', monospace;
+    background-color: #d4af37;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-radius: 1%; /* Rounded corners in percentage */
+    border: 1px solid #b3b3b3;
+    box-shadow: 2% 4% 6% rgba(0, 0, 0, 0.6); /* Shadows scaled */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0e68c;
+    color: #000;
+    transform: translateY(-5%); /* Adjust hover effect */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    font-family: 'Special Elite', monospace;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    color: #b3b3b3;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 10px 0;
+    }
+
+    .intro {
+        padding: 15px 15px;
+        max-width: 50%;
+        transform: rotate(-2deg);
+    }
+
+    .intro h2, .intro h3 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+        text-indent: 1em;
+    }
+
+    .cta-button {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .intro h2, .intro h3 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
