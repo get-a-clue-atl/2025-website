@@ -1,7 +1,7 @@
 # gac-2025-website
 
 # Homepage
-[getaclueatl.sugre.sh](getaclueatl.surge.sh)
+[getaclueatl.surge.sh](https://getaclueatl.surge.sh)
 
 
 ![assets/screenshots/homepage.png](assets/screenshots/homepage.png)
