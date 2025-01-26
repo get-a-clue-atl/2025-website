@@ -61,7 +61,7 @@ def render_html_document(n: int, html_bodies: List[str], output_dir: str) -> Non
         <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test Page</title>
+        <title>GAC History Files</title>
         <link rel="stylesheet" href="../styles/site-navigation.css">
         <link rel="stylesheet" href="../styles/body.css">
         <link rel="stylesheet" href="../styles/gac-history-notecards.css">
