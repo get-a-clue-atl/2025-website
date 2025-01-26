@@ -100,7 +100,7 @@ def render_html_document(n: int, html_bodies: List[str], output_dir: str) -> Non
                 <script src="../scripts/addNotebookPage.js"></script>
             <footer>
                 <div>Made with <span style="color: #e25555;">&#9829;</span> by Get A Clue Atlanta 2025.</div>
-                <div>Illustrations Courtesty of Brett Helquist.</div>
+                <div>Illustrations Courtesy of Brett Helquist.</div>
             </footer>
         </body>
         <script src="../scripts/addMenuDropdown.js"></script>
