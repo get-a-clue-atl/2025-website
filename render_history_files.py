@@ -75,19 +75,29 @@ def render_html_document(n: int, html_bodies: List[str], output_dir: str) -> Non
                     <div id="header">
                         <nav class="site-navigation">
                             <ul>
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../registration.html">Register</a></li>
-                                <li>
-                                <a href="#">Explore</a>
-                                <ul class="dropdown">
-                                    <li><a href="../registration.html">Register</a></li>
-                                    <li><a href="../faq.html">FAQ</a></li>
-                                    <li><a href="../gac-history.html">History</a></li>
-                                    <li><a href="../secrets.html">Secrets</a></li>
-                                    <li><a href="../contact.html">Contact</a></li>
-                                </ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="registration.html">Register</a></li>
+                                <li class="explore-menu">
+                                    <a href="#">Explore</a>
+                                    <ul class="dropdown">
+                                        <li><a href="registration.html">Register</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="gac-history.html">History</a></li>
+                                        <li><a href="secrets.html">Secrets</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="site-navigation-mobile">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="registration.html">Register</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="gac-history.html">History</a></li>
+                                <li><a href="secrets.html">Secrets</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>

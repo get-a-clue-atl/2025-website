@@ -37,7 +37,7 @@ header {
 
 /* Dropdown Menu */
 .dropdown {
-    display: none;
+    display: none; /* Default hidden */
     position: absolute;
     top: 100%;
     left: 0;
@@ -51,6 +51,7 @@ header {
 
 .dropdown li {
     margin: 0;
+    display: none;
 }
 
 .dropdown a {
@@ -63,7 +64,18 @@ header {
     color: #313030;
 }
 
-/* Show Dropdown on Hover */
+/* Show dropdown on hover of the parent .explore-menu */
+.explore-menu:hover > .dropdown {
+    display: block; /* Dropdown becomes visible */
+}
+
+.explore-menu:hover > .dropdown li {
+    display: block; /* Dropdown becomes visible */
+}
+
+
+
+/* Show Dropdown on Hover (Desktop Only) */
 .site-navigation li:hover > .dropdown {
     display: block;
 }
@@ -80,47 +92,53 @@ header {
     z-index: 1100;
 }
 
+/* Mobile Navigation */
+.site-navigation-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(30, 30, 30, 0.95);
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Special Elite', monospace;
+}
+
+.site-navigation-mobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation-mobile li {
+    width: 100%;
+}
+
+.site-navigation-mobile a {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #eaeaea;
+}
+
+.site-navigation-mobile a:hover {
+    color: #313030;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .site-navigation ul {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: rgba(30, 30, 30, 0.95);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease;
-    }
-
-    .site-navigation ul.open {
-        height: auto;
-        padding-bottom: 10px;
-    }
-
-    .site-navigation li {
-        width: 100%;
-    }
-
-    .site-navigation a {
-        width: 100%;
-        padding: 10px 20px;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .dropdown {
-        position: static;
-        display: none;
-    }
-
-    .dropdown.open {
-        display: block;
+    .site-navigation {
+        display: none; /* Hide desktop menu on mobile */
     }
 
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger menu on mobile */
+    }
+
+    .site-navigation-mobile {
+        display: flex;
     }
 }

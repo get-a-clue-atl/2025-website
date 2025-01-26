@@ -10,9 +10,12 @@ function createRandomNotebookPaper(content, link) {
       paper.innerHTML = `<p class="notebook-paper-normal-text">${content}</p>`;
     }
 
+    const pageWidth = window.innerWidth;
+    const pageHeight = window.innerHeight;
+
     // Generate random position offsets and rotation
-    const randomTop = (Math.random() -0.5) * 1200 + 600; // Random offset between -25px and 25px
-    const randomLeft = (Math.random() -0.5) * 1000 + 400; // Random offset between -25px and 25px
+    const randomTop = Math.random() * (pageHeight / 4); // Random offset between -25px and 25px
+    const randomLeft = Math.random() * (pageWidth / 2) + 100; // Random offset between -25px and 25px
     const randomRotation = (Math.random() -0.5 ) * 90; // Random rotation between -10 and 10 degrees
 
     // Apply styles for position and rotation
@@ -51,12 +54,12 @@ function addNotebookPapers() {
 
     // Add the notebook-paper elements to the body
     contents.forEach(([content, link]) => {
-        const randomBreaks = Math.floor(Math.random() * 10) + 1;
-        let breaks = '';
-        for (let i = 0; i < randomBreaks; i++) {
-            breaks += '<br>';
-        }
-        content = breaks + content;
+        // const randomBreaks = Math.floor(Math.random() * 10) + 1;
+        // let breaks = '';
+        // for (let i = 0; i < randomBreaks; i++) {
+        //     breaks += '<br>';
+        // }
+        // content = breaks + content;
         const paper = createRandomNotebookPaper(content, link);
 
         document.body.appendChild(paper);
