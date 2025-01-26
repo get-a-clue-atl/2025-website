@@ -10,13 +10,16 @@ body {
     background-position: center;
 }
 
+.container {
+    margin-bottom: 100px;
+}
+
 /* Title and Subtitle */
 .title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Special Elite', serif;
     font-size: 3rem;
-    color: #eaeaea;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    margin: 20px auto;
+    color: #333333;
+    margin: 30px auto;
     text-align: center;
     max-width: 90%;
 }
@@ -76,6 +79,37 @@ body {
     position: relative;
     z-index: 3;
 }
+
+.intro.intro-lean-left {
+    transform: rotate(-2deg);
+    background: url("../assets/vintage-paper.jpg") center/cover no-repeat;
+}
+
+.intro.intro-lean-left.notebook {
+    transform: rotate(-2deg);
+    background: url("../assets/crumpled_notepaper.jpg") center/cover no-repeat;
+}
+
+.intro.intro-lean-left.burned {
+    transform: rotate(-2deg);
+    background: url("../assets/burnt-paper.png") center/cover no-repeat;
+}
+
+
+.intro.intro-lean-right {
+    transform: rotate(2deg);
+}
+
+.intro.intro-lean-right.notebook {
+    transform: rotate(2deg);
+    background: url("../assets/crumpled_notepaper.jpg") center/cover no-repeat;
+}
+
+.intro.intro-lean-right.burned {
+    transform: rotate(2deg);
+    background: url("../assets/burnt-paper.png") center/cover no-repeat;
+}
+
 
 /* Torn Edges Effect */
 .intro::before,
