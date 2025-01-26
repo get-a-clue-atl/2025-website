@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdown.remove(); // Remove the original dropdown <ul>
     });
 
+    // Remove the "Explore" item from the menu
+    const exploreItem = menu.querySelector("li > a[href='#']").parentElement;
+    if (exploreItem) {
+        exploreItem.remove();
+    }
+
     // Add hamburger menu for mobile
     const hamburger = document.createElement("span");
     hamburger.classList.add("hamburger");
