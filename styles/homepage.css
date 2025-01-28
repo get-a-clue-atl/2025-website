@@ -254,6 +254,17 @@ footer {
         width: 50%;
         text-align: center;
     }
+
+    .headline-banner-alert {
+        padding: 5x 10px;
+        top: 10;
+        box-shadow: 0px 4px 6px #f8f9fa;
+    }
+    
+    .headline-banner-alert a {
+        font-size: 1.0rem;
+        padding: 5px 8px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -268,5 +279,16 @@ footer {
     .cta-button {
         padding: 8px 16px;
         font-size: 0.9rem;
+    }
+
+    .headline-banner-alert {
+        padding: 5x 10px;
+        top: 0;
+        box-shadow: 0px 1px 2px #f8f9fa;
+    }
+    
+    .headline-banner-alert a {
+        font-size: 0.8rem;
+        padding: 1px 2px;
     }
 }
