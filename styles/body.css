@@ -43,6 +43,15 @@ body {
     z-index: 2;
   }
 
+  .bottom-center-image {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: 10px;
+    bottom: 60px;
+    z-index: 2;
+  }
+
 .raven-script {
     font-family: 'Homemade Apple', serif !important;
     font-size: 2vw; /* Scales with the viewport */
