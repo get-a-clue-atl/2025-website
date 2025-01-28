@@ -179,6 +179,33 @@ body {
     transform: translateY(-5%); /* Adjust hover effect */
 }
 
+.headline-banner-alert {
+    background-color: #f8f9fa;
+    color: #eaeaea;
+    padding: 10px 20px;
+    position: sticky;
+    top: 10;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px #f8f9fa;
+    display: flex;
+    justify-content: center;
+}
+
+.headline-banner-alert a {
+text-decoration: none;
+    font-family: 'Special Elite', monospace;
+    color: rgb(148, 38, 38);
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headline-banner-alert a:hover {
+    color: rgb(223, 22, 22);
+}
 
 /* Footer */
 footer {
