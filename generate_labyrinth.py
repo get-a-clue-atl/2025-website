@@ -1,4 +1,5 @@
 import os
+import shutil
 
 prefixes = [
     "IBlSB",
@@ -169,9 +170,16 @@ for path in paths:
     print(f"Created {pathname}")
 
 for root, dirs, files in os.walk(root):
-    for dir in dirs:
+    for idx, dir in enumerate(dirs):
         with open(os.path.join(root, dir, "README.md"), "w") as f:
             f.writelines([
                 f"# {dir}\n",
                 f"_walking the labyrinth..._"
             ])
+
+        if idx % 3 == 0:
+            dir_prefix = dir.split("/")[-1]
+            print(dir_prefix)
+            shutil.copy("assets/labyrinth/AAAAA.pdf", os.path.join(root, dir, f"{dir_prefix}.pdf"))
+
+        
