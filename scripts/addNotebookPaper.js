@@ -48,7 +48,7 @@ function addNotebookPapers() {
         ['These secrets make up the keychain that holds the key that unlocks the door that hides the mystery.', 'secrets.html'],
         ['To properly collect the necessary evidence, you\'ll need to use your resources carefully.', 'contact.html'],
         ['Dedicated volunteers will review all of the needed research, and with each review, seemingly more evidence comes to light.\nResearch is a word here which means search again, or read thoroughly, at least twice.', 'research.html'],
-        ['THE FIRST OF TWELVE CLUES WILL BE SERVED AT THE COUCH BUILDING ON APRIL THE FOURTH', 'countdown.html'],
+        ['THE FIRST OF TWELVE CLUES WILL BE REVEALED AT THE COUCH BUILDING ON APRIL THE FIFTH', 'countdown.html'],
         ['TO REGISTER FOR GET A CLUE 2025, PLEASE REVIEW THIS NOTE', 'registration.html'],
     ];
 
