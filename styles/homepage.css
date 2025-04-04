@@ -179,6 +179,12 @@ body {
     transform: translateY(-5%); /* Adjust hover effect */
 }
 
+.cta-button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .headline-banner-alert {
     background-color: #f8f9fa;
     color: #eaeaea;
