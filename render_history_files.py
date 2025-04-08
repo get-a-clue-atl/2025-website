@@ -84,6 +84,7 @@ def render_html_document(n: int, html_bodies: List[str], output_dir: str) -> Non
                                         <li><a href="/faq.html">FAQ</a></li>
                                         <li><a href="/gac-history.html">History</a></li>
                                         <li><a href="/gac-manual.html">Manual</a></li>
+                            <li><a href="/clues.html">Clues</a></li>
                                         <li><a href="/secrets.html">Secrets</a></li>
                                         <li><a href="/contact.html">Contact</a></li>
                                     </ul>
@@ -98,6 +99,7 @@ def render_html_document(n: int, html_bodies: List[str], output_dir: str) -> Non
                                 <li><a href="/faq.html">FAQ</a></li>
                                 <li><a href="/gac-history.html">History</a></li>
                                 <li><a href="/gac-manual.html">Manual</a></li>
+                            <li><a href="/clues.html">Clues</a></li>
                                 <li><a href="/secrets.html">Secrets</a></li>
                                 <li><a href="/contact.html">Contact</a></li>
                             </ul>
