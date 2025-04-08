@@ -233,6 +233,17 @@ h1 small {
     );
 }
 
+.notebook-cover.book13:before {
+    background: linear-gradient(
+        to right, 
+        #b09079 0%, #baa68b 12%, 
+        #b09079 25%, #baa68b 37%, 
+        #b09079 50%, #baa68b 62%, 
+        #b09079 75%, #baa68b 87%, 
+        #b09079 100%
+    );
+}
+
 .notebook-skin {
     height: 15px;
     background: d3b073;
